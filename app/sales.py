@@ -12,3 +12,11 @@ def apply_discount(amount, percent):
 
 def clean_region(region):
     return region.strip().title()
+
+
+def order_size(amount):
+    if amount >= 10000:
+        return "LARGE"
+    if amount >= 1000:
+        return "MEDIUM"
+    return "SMALL"
