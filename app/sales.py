@@ -7,7 +7,8 @@ def calculate_total(price, quantity):
 def apply_discount(amount, percent):
     if percent < 0 or percent > 100:
         raise ValueError("percent must be between 0 and 100")
-    return round(amount * (1 - percent / 100), 2)
+    # return round(amount * (1 - percent / 100), 2)
+    return round(amount * percent / 100, 2)
 
 
 def clean_region(region):
